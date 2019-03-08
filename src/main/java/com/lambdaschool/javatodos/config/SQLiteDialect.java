@@ -1,4 +1,4 @@
-package javatodos.demo.config;
+package com.lambdaschool.javatodos.config;
 
 import org.hibernate.dialect.Dialect;
 import org.hibernate.dialect.function.SQLFunctionTemplate;

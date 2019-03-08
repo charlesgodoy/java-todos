@@ -1,4 +1,4 @@
-package javatodos.demo.config;
+package com.lambdaschool.javatodos.config;
 
 import org.h2.server.web.WebServlet;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;

@@ -1,4 +1,4 @@
-package javatodos.demo.config;
+package com.lambdaschool.javatodos.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,18 +22,18 @@ public class Swagger2Config
     {
         return new Docket(DocumentationType.SWAGGER_2).select()
                 .apis(RequestHandlerSelectors
-                        .basePackage("com.lambdaschool.h2crudsnacks"))
+                        .basePackage("com.lambdaschool.javatodos"))
                 .paths(PathSelectors.regex("/.*"))
                 .build().apiInfo(apiEndPointsInfo());
     }
 
     private ApiInfo apiEndPointsInfo()
     {
-        return new ApiInfoBuilder().title("Crudy Snack Bar")
-                .description("Snack Bar Revisited with CRUD")
-                .contact(new Contact("John Mitchell", "http://www.lambdaschool.com", "john@lambdaschool.com"))
-                .license("MIT")
-                .licenseUrl("https://github.com/LambdaSchool/java-crudysnacks/blob/master/LICENSE")
+        return new ApiInfoBuilder().title("Java-Todos")
+                .description("Java-todos Revisited with CRUD")
+                .contact(new Contact("Charles Godoy", "http://www.nowebsite.com", "something@somewhere.com"))
+                .license("AAA")
+                .licenseUrl("http://www.nowebsite.com")
                 .version("1.0.0")
                 .build();
     }

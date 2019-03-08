@@ -1,4 +1,4 @@
-package javatodos.demo.config;
+package com.lambdaschool.javatodos.config;
 
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
